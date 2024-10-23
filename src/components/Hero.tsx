@@ -23,7 +23,7 @@ function Hero() {
                   Youssef El AIMARI
                 </span>
                 <p>
-                  Full-Stack developer and Data Science student at{" "}
+                  Full-Stack developer & Data Science student at
                   <a
                     className="underline"
                     href="https://www.uiz.ac.ma/"
@@ -37,6 +37,7 @@ function Hero() {
           </div>
 
           <div className="col-span-2">
+
             <div className="w-full pt-4">
               <div className="mb-6">
                 <h2 className="text-5xl font-bold flex flex-col">
@@ -117,6 +118,11 @@ function Hero() {
                 </li>
               </ul>
             </div>
+
+            {/* Main Stacks & technologies */}
+            {/* Programing Language I'm familiar with  */}
+            {/* Latest Projects */}
+            {/* Latest Blogs */}
           </div>
         </div>
       </div>
