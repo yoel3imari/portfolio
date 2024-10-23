@@ -3,6 +3,7 @@ import React from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { Button } from "./ui/button";
 import { AtSign } from "lucide-react";
+import { ModeDropdown } from "./ModeDropdown";
 
 function Header() {
   return (
@@ -61,6 +62,9 @@ function Header() {
           </li>
           <li>
             <Button variant="outline" className="w-16 h-8 border-2 rounded-full">CV</Button>
+          </li>
+          <li>
+            <ModeDropdown />
           </li>
         </ul>
       </div>
