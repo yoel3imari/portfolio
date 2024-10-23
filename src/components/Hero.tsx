@@ -1,11 +1,8 @@
 import Image from "next/image";
 import Header from "./Header";
 import { ChartScatter, Globe, Smartphone } from "lucide-react";
-import { Button } from "./ui/button";
-import { calculateAge } from "@/lib/utils";
 
 function Hero() {
-  const age = calculateAge("2000-05-18");
 
   return (
     <div className="h-screen">
