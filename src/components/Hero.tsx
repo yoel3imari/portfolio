@@ -1,129 +1,61 @@
 import Image from "next/image";
 import Header from "./Header";
-import { ChartScatter, Globe, Smartphone } from "lucide-react";
+import HeroSummary from "./hero/HeroSummary";
+import HeroServices from "./hero/HeroServices";
 
 function Hero() {
 
   return (
     <div className="h-screen">
+      
       <Header />
-      <div className="px-16 mt-16">
-        <div className="min-h-screen grid grid-cols-3 gap-16 px-16">
-          <div className="sticky top-8 h-fit">
-            <div className="bg-primary w-full flex flex-col px-4 py-8 items-center rounded-t-3xl">
+
+      <div className="px-4 md:px-16 pt-16">
+        <div className="md:max-h-[calc(100vh-64px)] md:h-[calc(100vh-64px)] grid grid-cols-1 md:grid-cols-3 gap-16">
+           
+          <div className="md:max-h-[calc(100vh-64px)] w-full">
+            <div className=" w-full flex flex-col px-2 md:px-4 py-8 items-center justify-center">
               <Image
                 src="/profile_picture.png"
-                width={280}
+                width={360}
                 height={720}
                 alt="yoel3imari profile picture"
-                className="border-4 w-full border-primary-foreground rounded-t-3xl mb-4"
+                className="w-full rounded-3xl mb-4 border-4"
               />
               <div className="w-full flex flex-col">
-                <span className="text-3xl font-bold text-primary-foreground text-start">
+                <p className="text-3xl font-bold text-primary-foreground">
                   Youssef El AIMARI
-                </span>
-                <p>
-                  Full-Stack developer & Data Science student at
-                  <a
-                    className="underline"
-                    href="https://www.uiz.ac.ma/"
-                    target="_blank"
-                  >
-                    Ibn Zohr University, Agadir Morocco
-                  </a>
+                </p>
+                <p className="text-xl">
+                  Full-Stack developer
+                </p>
+                <p className="text-xl">
+                  Data Science Student
                 </p>
               </div>
+              <div className="pt-8 flex items-center justify-between gap-4">
+                <span>some stats</span>
+                <span>some stats</span>
+                <span>some stats</span>
+              </div>
             </div>
           </div>
 
-          <div className="col-span-2">
+          <div className="md:col-span-2 md:pt-8 pb-16 overflow-auto md:hide_scrollbar scroll-smooth">
 
-            <div className="w-full pt-4">
-              <div className="mb-6">
-                <h2 className="text-5xl font-bold flex flex-col">
-                  <span className="">Full-Stack Developer</span>
-                  <span className="text-gray-400 dark:text-secondary">
-                    & Data Science Student
-                  </span>
-                </h2>
-              </div>
-              <p className="text-sm text-justify mb-4">
-                Skilled in full-stack web and mobile development, with a
-                background in data analytics and AI. Proficient in Vue3, Nuxt3,
-                React, NextJS, Laravel, and mobile development with React Native and
-                Kotlin. Experienced in machine learning, deep learning using Python. Built various platforms, including
-                e-learning and e-commerce sites.
-              </p>
-            </div>
+            <HeroSummary />
 
-            <div className="w-full pt-4">
-              <div className="mb-6">
-                <h2 className="text-5xl font-bold flex flex-col">
-                  <span>Services</span>
-                  <span className="text-gray-400 dark:text-secondary">
-                    & Expertises
-                  </span>
-                </h2>
-              </div>
-              <ul>
-                <li className="mb-5 pe-6">
-                  <div className="flex items-center gap-4 mb-2">
-                    <span>
-                      <Globe size={24} />
-                    </span>
-                    <h3 className="text-lg font-semibold">
-                      Full-Stack Developer
-                    </h3>
-                  </div>
-                  {/* <p className="text-sm font-light text-justify">
-                  I offer Full-Stack Development services using to build
-                  dynamic, scalable web applications. My expertise covers both
-                  frontend and backend development, with a focus on creating
-                  responsive, efficient, and user-friendly platforms.
-                </p> */}
-                </li>
-                <li className="mb-5 pe-6">
-                  <div className="flex items-center gap-4 mb-2">
-                    <span>
-                      <Smartphone size={24} />
-                    </span>
-                    <h3 className="text-lg font-semibold">Mobile Developer</h3>
-                  </div>
-                  {/* <p className="text-sm font-light text-justify">
-                  enthusiastic mobile developer driven with the evolution of
-                  native development and the integration of web technologies in
-                  development of mobile apps, I specialize in React Native for
-                  cross-platform apps and Kotlin for Android. I create seamless,
-                  high-performance mobile experiences tailored to your business
-                  needs.
-                </p> */}
-                </li>
-                <li className="mb-5 pe-6">
-                  <div className="flex items-center gap-4 mb-2">
-                    <span>
-                      <ChartScatter size={24} />
-                    </span>
-                    <h3 className="text-lg font-semibold">
-                      Data Analytics and AI
-                    </h3>
-                  </div>
-                  {/* <p className="text-sm font-light text-justify">
-                  I provide Data Analytics and AI services, specializing in
-                  machine learning (scikit-learn) and deep learning
-                  (TensorFlow). My work includes data preprocessing, time series
-                  analysis, and visualizations. I help businesses extract
-                  insights and build predictive models for smarter
-                  decision-making.
-                </p> */}
-                </li>
-              </ul>
-            </div>
+            <HeroServices />
 
             {/* Main Stacks & technologies */}
-            {/* Programing Language I'm familiar with  */}
+
+            {/* Programing Language I'm familiar with or currently learning  */}
+
             {/* Latest Projects */}
+            
             {/* Latest Blogs */}
           </div>
+
         </div>
       </div>
     </div>
