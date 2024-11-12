@@ -71,9 +71,6 @@ function Header() {
             </a>
           </li>
           <li>
-            <Button variant="outline" className="w-16 h-8 border-2 rounded-full">CV</Button>
-          </li>
-          <li>
             <ModeDropdown />
           </li>
         </ul>

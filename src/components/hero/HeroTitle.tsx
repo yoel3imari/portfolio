@@ -1,11 +1,23 @@
+import clsx from "clsx";
 import React from "react";
 
-function HeroTitle(props: {title: string, subtitle: string}) {
+function HeroTitle(props: {
+  title: string;
+  subtitle: string;
+  center?: boolean;
+}) {
   return (
     <div className="mt-12 mb-8">
-      <h2 className="text-5xl font-bold flex flex-col">
-        <span>{props.title}</span>
-        <span className="text-gray-400 dark:text-secondary">& {props.subtitle} </span>
+      <h2
+        className={clsx(
+          "text-5xl font-bold",
+          props.center ? "text-start" : "text-center"
+        )}
+      >
+        <span className="mr-3">{props.title}</span>
+        <span className="text-gray-400 dark:text-secondary">
+          & {props.subtitle}{" "}
+        </span>
       </h2>
     </div>
   );

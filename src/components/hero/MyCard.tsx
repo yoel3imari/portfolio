@@ -3,8 +3,8 @@ import React from "react";
 
 function MyCard() {
   return (
-    <div className="md:max-h-[calc(100vh-64px)] md:border-e w-full">
-      <div className=" w-full flex flex-col px-2 md:px-8 py-8 items-center justify-center">
+    <div className="w-full">
+      <div className=" w-full h-full flex flex-col px-2 md:px-8 py-8 items-center justify-center">
         <Image
           src="/profile_picture.png"
           width={360}
@@ -19,11 +19,7 @@ function MyCard() {
           <p className="text-xl">Full-Stack developer</p>
           <p className="text-xl">Data Science Student</p>
         </div>
-        <div className="pt-8 flex items-center justify-between gap-4">
-          <span>some stats</span>
-          <span>some stats</span>
-          <span>some stats</span>
-        </div>
+
       </div>
     </div>
   );

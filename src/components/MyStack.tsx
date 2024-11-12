@@ -1,27 +1,29 @@
 import React from "react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import clsx from "clsx";
 import { tabs } from "@/lib/data";
-import HeroTitle from "./HeroTitle";
+import HeroTitle from "./hero/HeroTitle";
 
-function HeroStack() {
+function MyStack() {
   return (
     <div className="w-full pt-4">
       <HeroTitle title="Tools" subtitle="Technologies" />
       <Tabs defaultValue={tabs[0].name}>
-        <TabsList
-          className={clsx(
-            "grid overflow-x-auto hide_scrollbar grid-cols-6"
-          )}
-        >
-          {tabs.map((t) => (
-            <TabsTrigger className="" value={t.name} key={t.name}>
-              {t.label}
-            </TabsTrigger>
-          ))}
-        </TabsList>
+        <div className="flex items-center w-full justify-center overflow-x-auto hide_scrollbar">
+          <TabsList
+            className={clsx(
+              "flex items-center justify-between overflow-x-auto hide_scrollbar max-w-[720px]"
+            )}
+          >
+            {tabs.map((t) => (
+              <TabsTrigger className="" value={t.name} key={t.name}>
+                {t.label}
+              </TabsTrigger>
+            ))}
+          </TabsList>
+        </div>
         {tabs.map((t) => (
-          <TabsContent value={t.name} key={t.name}>
+          <TabsContent className="min-h-[300px]" value={t.name} key={t.name}>
             <div className="flex flex-wrap items-center justify-center gap-4">
               {t.items.map((i) => (
                 <div
@@ -40,4 +42,4 @@ function HeroStack() {
   );
 }
 
-export default HeroStack;
+export default MyStack;
