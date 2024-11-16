@@ -205,34 +205,31 @@ export const tabs = [
       },
     ],
   },
-  {
-    name: "languages",
-    label: "Languages",
-    items: [
-      {
-        name: "JavaScript",
-        icon: SiJavascript,
-      },
-      {
-        name: "Python",
-        icon: SiPython,
-      },
-      {
-        name: "PHP",
-        icon: SiPhp,
-      },
-      {
-        name: "Java",
-        icon: DiJava,
-      },
-      {
-        name: "Kotlin",
-        icon: SiKotlin,
-      },
-      {
-        name: "Rust",
-        icon: SiRust,
-      },
-    ],
-  },
 ];
+
+export const languages = [
+  {
+    name: "JavaScript",
+    icon: SiJavascript,
+  },
+  {
+    name: "Python",
+    icon: SiPython,
+  },
+  {
+    name: "PHP",
+    icon: SiPhp,
+  },
+  {
+    name: "Java",
+    icon: DiJava,
+  },
+  {
+    name: "Kotlin",
+    icon: SiKotlin,
+  },
+  {
+    name: "Rust",
+    icon: SiRust,
+  },
+]

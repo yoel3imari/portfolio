@@ -10,10 +10,10 @@ function MyServices() {
       <HeroTitle title="Services" subtitle="Expertises" />
 
       <div className="flex items-center justify-center h-full">
-        <div className="h-full w-full grid grid-cols-1 md:grid-cols-3">
+        <div className="h-full w-full grid grid-cols-1 md:grid-cols-3 gap-4">
           {services.map((s) => (
-            <div className="flex items-center justify-center flex-1">
-              <Card key={s.title} className="h-full max-w-80 flex flex-col">
+            <div key={s.title} className="flex items-center justify-center flex-1 w-full">
+              <Card key={s.title} className="h-full max-w-80 flex flex-col w-full">
                 <CardHeader>
                   <div className="text-center flex items-center flex-col">
                     <s.icon className="mb-4 size-8" />

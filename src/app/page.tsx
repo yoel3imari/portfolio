@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import MyStack from "@/components/MyStack";
 import MyServices from "@/components/MyServices";
 import Container from "@/components/Container";
+import Languages from "@/components/Languages";
 
 export default function Home() {
   return (
@@ -13,11 +14,8 @@ export default function Home() {
       <Container>
         <MyServices />
         <MyStack />
+        <Languages />
       </Container>
-
-      {/* Main Stacks & technologies */}
-
-      {/* Programing Language I'm familiar with or currently learning  */}
 
       {/* Latest Projects */}
 

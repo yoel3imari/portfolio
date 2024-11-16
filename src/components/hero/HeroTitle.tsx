@@ -3,7 +3,7 @@ import React from "react";
 
 function HeroTitle(props: {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   center?: boolean;
 }) {
   return (
@@ -15,9 +15,11 @@ function HeroTitle(props: {
         )}
       >
         <span className="mr-3">{props.title}</span>
-        <span className="text-gray-400 dark:text-secondary">
-          & {props.subtitle}{" "}
-        </span>
+        {props.subtitle && (
+          <span className="text-gray-400 dark:text-secondary">
+            {"& " + props.subtitle}{" "}
+          </span>
+        )}
       </h2>
     </div>
   );

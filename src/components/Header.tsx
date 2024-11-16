@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { Button } from "./ui/button";
 import { AtSign } from "lucide-react";
 import { ModeDropdown } from "./ModeDropdown";
 import { BsWhatsapp } from "react-icons/bs";

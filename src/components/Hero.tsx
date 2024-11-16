@@ -1,6 +1,5 @@
 import HeroSummary from "./hero/HeroSummary";
 import MyCard from "./hero/MyCard";
-import MyServices from "./MyServices";
 
 function Hero() {
   return (
