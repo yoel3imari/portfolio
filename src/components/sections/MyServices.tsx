@@ -1,8 +1,8 @@
 import React from "react";
-import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
-import ContactButton from "./ContactButton";
+import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
+import ContactButton from "../ContactButton";
 import { services } from "@/lib/data";
-import HeroTitle from "./hero/HeroTitle";
+import HeroTitle from "../hero/HeroTitle";
 
 function MyServices() {
   return (

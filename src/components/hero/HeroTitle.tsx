@@ -7,7 +7,7 @@ function HeroTitle(props: {
   center?: boolean;
 }) {
   return (
-    <div className="mt-12 mb-8">
+    <div className="mt-8 mb-8">
       <h2
         className={clsx(
           "text-5xl font-bold",

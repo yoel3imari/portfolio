@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AtSign } from "lucide-react";
 import { ModeDropdown } from "./ModeDropdown";
 import { BsWhatsapp } from "react-icons/bs";
@@ -33,24 +32,6 @@ function Header() {
 
       <div id="contact" className="hidden md:block flex-1">
         <ul className="w-full flex items-center justify-end gap-8">
-          <li>
-            <a
-              href="https://linkedin.com/in/yoel3imari"
-              className=" text-muted-foreground"
-              target="_blank"
-            >
-              <FaLinkedinIn size={20} />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/yoel3imari"
-              target="_blank"
-              className=" text-muted-foreground"
-            >
-              <FaGithub size={20} />
-            </a>
-          </li>
           <li>
             <a
               href="mailto:youssef.elaimari@gmail.com"

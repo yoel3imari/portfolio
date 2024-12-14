@@ -1,12 +1,13 @@
 import React from "react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import clsx from "clsx";
 import { tabs } from "@/lib/data";
-import HeroTitle from "./hero/HeroTitle";
+import HeroTitle from "../hero/HeroTitle";
+import SectionWrapper from "../SectionWrapper";
 
 function MyStack() {
   return (
-    <div className="w-full pt-4">
+    <SectionWrapper className="w-full pt-4">
       <HeroTitle title="Tools" subtitle="Technologies" />
       <Tabs defaultValue={tabs[0].name}>
         <div className="flex items-center w-full justify-center overflow-x-auto hide_scrollbar">
@@ -38,7 +39,7 @@ function MyStack() {
           </TabsContent>
         ))}
       </Tabs>
-    </div>
+    </SectionWrapper>
   );
 }
 

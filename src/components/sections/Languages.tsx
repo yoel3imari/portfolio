@@ -1,11 +1,12 @@
 import React from "react";
-import HeroTitle from "./hero/HeroTitle";
-import { ScrollArea, ScrollBar } from "./ui/scroll-area";
+import HeroTitle from "../hero/HeroTitle";
+import { ScrollArea, ScrollBar } from "../ui/scroll-area";
 import { languages } from "@/lib/data";
+import SectionWrapper from "../SectionWrapper";
 
 function Languages() {
   return (
-    <div className="mb-16">
+    <SectionWrapper className="">
       <HeroTitle title="Programming Languages" />
       <div className="flex items-center justify-center">
         <ScrollArea className="w-full md:w-[720px] lg:w-[1200px] whitespace-nowrap rounded-md">
@@ -25,7 +26,7 @@ function Languages() {
           <ScrollBar orientation="horizontal" />
         </ScrollArea>
       </div>
-    </div>
+    </SectionWrapper>
   );
 }
 
