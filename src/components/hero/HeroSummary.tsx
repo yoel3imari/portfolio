@@ -18,10 +18,17 @@ const HeroSummary = () => {
         center
       />
       <p className="text-justify">
-        Hi, I am Youssef from Morocc, Currently following a Master&#39s degree in
-        Data Science. I am a skilled full-stack developper proficient in Web
-        Development, with a background in mobile development using Kotlin and
-        React Native.
+        Motivated and detail-oriented Master&#39;s student specializing in Data
+        Analytics and Artificial Intelligence, with a strong background in
+        software development, data science, and digital innovation. Passionate about building meaningful
+        digital solutions, I have worked on various academic and personal
+        projects ranging from web platforms to intelligent systems. My journey
+        has equipped me with a solid foundation in programming, project
+        management, and modern development tools. I am particularly interested in
+        emerging technologies, cross-platform development, and the future of AI
+        in real-world applications. With a deep curiosity and a constant drive
+        to learn, I aim to contribute to impactful projects and grow within a
+        dynamic, forward-thinking team.
       </p>
       <div className="mt-4 flex items-center gap-4 font-semibold">
         <Button className="bg-purple-700 text-white hover:bg-purple-900">
